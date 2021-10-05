@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
   <body>
-  <head>
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-</head>
+    <head>
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    </head>
     <a href="/axio.html">Axio</a>
     <a href="/forms.html">Forms</a>
     <a href="/local.html">Local</a>
@@ -11,12 +11,14 @@
 
     <script>
       function showUser(response) {
-        alert(`The user name is ${response.data.name}`);
+        // alert(`The user name is ${response.data.name}`);
+        console.log(response.data);
       }
 
       let url = 'https://jsonplaceholder.typicode.com/users/1';
       axios.get(url).then(showUser);
-      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     </script>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </body>
 </html>
